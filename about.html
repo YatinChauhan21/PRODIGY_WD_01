@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <a href="index.html"><img src="images/facts.png" alt="HTML tutorial" style="width:65px;height:42px;"></a>
+        <ul class="nav-links">
+          <li><a href="index.html" onclick="toggleNav(this)">Home</a></li>
+          <li><a href="about.html" onclick="toggleNav(this)">About</a></li>
+
+          <li><a href="#" onclick="toggleNav()">Services</a></li>
+          <li><a href="#" onclick="toggleNav()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggleNav()">&#9776;</div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div style="border-bottom: 2px  solid red";><h1>About Us</h1>
+      </div>
+      <div class="about-section">
+        <p>
+          Welcome to our about page! We are a team of passionate individuals
+          dedicated to providing exceptional services. Our mission is to deliver
+          high-quality solutions to our clients and make a positive impact in
+          the industry.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          auctor nunc vitae diam ultrices, ut ullamcorper lacus hendrerit. Nulla
+          quis dolor ut sapien suscipit mattis. Sed nec fermentum eros.
+          Suspendisse potenti. Nullam viverra ultricies convallis. Proin varius
+          convallis mi, in lacinia quam hendrerit vitae.
+        </p>
+        <p>
+          Praesent eleifend justo eget libero hendrerit, ut imperdiet erat
+          vulputate. Nulla facilisi. Vivamus vehicula ornare nisl, non rhoncus
+          libero iaculis ac. Sed vel fringilla nulla.
+        </p>
+      </div>
+      <button class="styled-button" onclick="handleButtonClick()">Learn more..</button>
+
+    
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>

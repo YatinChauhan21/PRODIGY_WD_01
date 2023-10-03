@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("bg5.jpg"); /* Add the path to your background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(172, 148, 29);
+  padding: 1px 0;
+  transition: background-color 0.4s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.welcome {
+  color: #2128ad;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.Image1 {
+  display: inherit;
+  animation: both;
+  border: 3px solid #73ad21;
+  border-radius: 5px;
+  width: 505px;
+}
+.Image2 {
+  display: inherit;
+  animation: both;
+  border: 3px solid #73ad21;
+  border-radius: 5px;
+}
+.para {
+  display: inline;
+  padding: 0 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.heading {
+  border-left: 6px solid red;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+}
+
+.styled-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 5px 0;
+}
+.nav-links {
+  display: inline-block;
+}
+.logo {
+  width: 70px;
+  color: #090909;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: fantasy;
+  padding-left: 10px;
+  display: pointer;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  margin: 0%;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0; /* Initial width set to 0 */
+  height: 3px;
+  bottom: -10px; /* Adjusted position */
+  background-color: #2a1ba9; /* Color of the underline */
+  transition: width 0.3s ease; /* Animation for the underline */
+  left: 50%; /* Start position of the underline */
+  transform: translateX(-50%); /* Center the underline */
+}
+.content {
+  padding: 70px 70px;
+}
+
+.nav-links li a:hover {
+  color: #0f3581;
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* Show the full underline on hover */
+}
+
+.toggle {
+  display: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .toggle {
+    display: block;
+    text-align: right;
+  }
+}
